@@ -20,7 +20,8 @@ require('lazy').setup({
   require 'plugins/harpoon',
 
   -- Themes
-  require 'plugins/tokyonight',
+  --require 'themes/tokyonight',
+  require 'themes/gruvbox-material',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
