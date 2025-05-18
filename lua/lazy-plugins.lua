@@ -1,5 +1,5 @@
 -- [[ Configure and install plugins ]]
---  See :Lazy
+--  See `:Lazy`
 
 require('lazy').setup({
   'NMAC427/guess-indent.nvim', -- Detect tabstop and shiftwidth automatically
@@ -9,15 +9,18 @@ require('lazy').setup({
   require 'plugins/lspconfig',
   require 'plugins/conform',
   require 'plugins/blink-cmp',
-  require 'plugins/tokyonight',
-  require 'plugins/todo-comments',
-  require 'plugins/mini',
   require 'plugins/treesitter',
-  require 'plugins.debug',
-  require 'plugins.indent_line',
-  require 'plugins.lint',
-  require 'plugins.autopairs',
-  require 'plugins.neo-tree',
+  require 'plugins/todo-comments',
+  require 'plugins/debug',
+  require 'plugins/lint',
+  require 'plugins/autopairs',
+  require 'plugins/neo-tree',
+  require 'plugins/mini',
+  --require 'plugins/indent_line',
+  require 'plugins/harpoon',
+
+  -- Themes
+  require 'plugins/tokyonight',
 }, {
   ui = {
     icons = vim.g.have_nerd_font and {} or {
